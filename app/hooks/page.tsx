@@ -2,6 +2,7 @@ import Contador from "@/components/Contador/page"
 import InputEcho from "@/components/InputEcho/InputEcho"
 import SeletorTecno from "@/components/SeletorTecno/SeletorTecno"
 import Tarefas from "@/components/Tarefas/Tarefas"
+import Tecnologias from "@/components/Tecnologias/Tecnologias"
 
 export default function HooksPage() {
 
@@ -29,6 +30,8 @@ export default function HooksPage() {
             <SeletorTecno />
 
             <Tarefas />
+
+            <Tecnologias />
         </>
     )
 }

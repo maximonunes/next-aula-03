@@ -1,15 +1,14 @@
 'use client'
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 
 export default function Tarefas() {
 
     // estados
-    const [tarefas, setTarefas] = useState<string[]>([])
+    const [tarefas, setTarefas] = useState<string[]>(['correr', 'passear'])
     const [novaTarefa, setNovaTarefa] = useState<string>("")
 
 
     // event handlers
-
 
 
     // renderização
