@@ -8,7 +8,7 @@ interface PreferidaProps {
 export default function ContadorPorTecnologia({tecnologia}:PreferidaProps) {
 
     //
-    // A. estados
+    // A. Gestão de estados
     const [likes, setLikes] = useState(() => {
         const storedLikes = localStorage.getItem(tecnologia)||'0'
         return parseInt(storedLikes)
@@ -23,7 +23,7 @@ export default function ContadorPorTecnologia({tecnologia}:PreferidaProps) {
 
 
     //
-    // C. Renderização
+    // C. Renderização de componentes
     return (
         <>
             : {likes} <button

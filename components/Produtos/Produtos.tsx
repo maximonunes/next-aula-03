@@ -15,7 +15,7 @@ export default function Produtos() {
 
 
     // 
-    // B. Renderização
+    // B. Renderização de componentes
     if (error) return <p>Erro ao carregar</p>
     if (isLoading) return <p>Carregando...</p>
     if(!data || data.length === 0) return <p>Sem produtos</p>

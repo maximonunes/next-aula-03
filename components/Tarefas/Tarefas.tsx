@@ -4,17 +4,17 @@ import {useEffect, useState} from 'react'
 export default function Tarefas() {
 
     //
-    // A. estados
+    // A. Gestão de estados
     const [novaTarefa, setNovaTarefa] = useState<string>("")
     // tarefas, lista de tarefas
 
 
     //
-    // B. event handlers
+    // B. event handlers (interação do utilizador)
 
 
     //
-    // C. renderização
+    // C. renderização de componentes
     return (
         <section className="bg-blue-300 p-2 pb-4 mt-6 rounded-xl">
 
