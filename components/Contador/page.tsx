@@ -5,7 +5,8 @@ export default function Contador() {
 
     // Gestão de Estados
 
-    const [count , setCount] = useState(0)
+    const [count , setCount] = useState(0);
+    const [history , setHistory] = useState<number[]>([]);
     
 
     // Renderização de componentes
@@ -25,6 +26,13 @@ export default function Contador() {
                 className="bg-green-500 hover:bg-green-600 active:bg-green-700 hover:pointer text-white font-bold py-2 px-4 mx-2 border border-green-700 rounded"
                 onClick={() => {setCount(count > 0 ? count - 1 : 0)}}
             >Diminuir</button>
+
+            <button>
+                <p>Histórico:
+                {history.map(( c , i) => (<span key = {i} > {c}</span>))}
+                </p>
+            </button>
+
         </section>
     )
 }
